@@ -1,0 +1,120 @@
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0162af;
+}
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin-left: 10px;
+}
+/* Search bar */
+.search-bar {
+  flex-grow: 2;
+  max-width: 300px;
+}
+/* Navbar */
+.navbar-nav {
+  gap: 10px;
+  font-weight: bold;
+}
+
+/* Judul Tengah */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+h3 {
+  text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+.about-text,
+p {
+  text-indent: 40px;
+}
+/* Gambar */
+.about-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+/* List Mengapa Memilih */
+.why-choose ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose li {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: #0162af;
+  color: white;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+}
+.footer p {
+  text-indent: 0;
+}
+.footer-section a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+  background: #083457;
+  color: white;
+}
+
+/* RESPONSIVE (LAYAR KECIL) */
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    display: block;
+  }
+  .search-bar {
+    max-width: 300px;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+
+  /* Footer tetap horizontal */
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0162af;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin-left: 10px;
+}
+
+/* Search bar */
+.search-bar {
+  flex-grow: 2;
+  max-width: 300px;
+}
+
+/* Navbar */
+.navbar-nav {
+  gap: 10px;
+  font-weight: bold;
+}
+
+.program-mentors {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.program-mentors h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.program-mentors p {
+  font-size: 18px;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Container utama untuk grid */
+.mentor-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Setiap item mentor */
+.mentor-card {
+  background: #0162af;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center; /* Memusatkan teks */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gambar mentor */
+.mentor-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Judul h2 dan teks di bawahnya */
+.mentor-card h3 {
+  margin: 10px 0 5px;
+}
+
+.mentor-card p {
+  font-size: 14px;
+}
+
+.mentor-card .program,
+.mentor-card .tanggal {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: #0162af;
+  color: white;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+  background: #083457;
+  color: white;
+}
+
+/* RESPONSIVE (LAYAR KECIL) */
+@media screen and (max-width: 768px) {
+  /* Header: hanya logo, search, dan sidebar */
+  .navbar-collapse {
+    display: block;
+  }
+  .search-bar {
+    max-width: 300px;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}

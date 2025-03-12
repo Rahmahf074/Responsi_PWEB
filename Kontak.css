@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007bff;
+  padding: 10px 20px;
+  width: 100%;
+}
+.header > * {
+  background: none;
+  box-shadow: none;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin-left: 10px;
+}
+
+/* Search bar */
+.search-bar {
+  flex-grow: 2;
+  max-width: 300px;
+}
+
+/* Navbar */
+.navbar-nav {
+  gap: 10px;
+  font-weight: bold;
+}
+
+.container-kontak {
+  background-color: #0162af !important;
+  width: 100%;
+}
+
+h2 {
+  color: #333;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.info {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.info p {
+  margin: 5px 0;
+}
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  font-weight: bold;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: grey;
+}
+.social-links {
+  margin-top: 20px;
+}
+.social-links a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.social-links a:hover {
+  background: grey;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: #0162af;
+  color: white;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+  background: #083457;
+  color: white;
+}
+
+/* RESPONSIVE (LAYAR KECIL) */
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    display: block;
+  }
+  .search-bar {
+    max-width: 300px;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+
+  .container-kontak {
+    padding: 30px 15px;
+  }
+
+  .container-kontak h2 {
+    font-size: 20px;
+  }
+
+  .container-kontak p {
+    font-size: 14px;
+  }
+
+  /* Footer tetap horizontal */
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}
